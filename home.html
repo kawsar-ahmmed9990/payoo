@@ -60,7 +60,7 @@
     >
       <!-- Add money card -->
       <div
-        class="card bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
+        class="card card-btn bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
         id="add-money-card-btn"
       >
         <figure>
@@ -74,21 +74,21 @@
       </div>
       <!-- Cash out card -->
       <div
-        class="card bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
+        class="card card-btn bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
         id="cash-out-card-btn"
       >
         <figure>
           <img src="./images/send1.png" alt="Cashout" />
         </figure>
         <div class="card-body">
-          <h2 class="text-center text-[#080808b3]" id="cashout-text-color">
+          <h2 class="text-center text-[#080808b3]" id="cash-out-text-color">
             Cash Out
           </h2>
         </div>
       </div>
       <!-- Transfer money card -->
       <div
-        class="card bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
+        class="card card-btn bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
         id="transfer-card-btn"
       >
         <figure>
@@ -102,7 +102,7 @@
       </div>
       <!-- Get bonus card -->
       <div
-        class="card bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
+        class="card card-btn bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
         id="get-bonus-card-btn"
       >
         <figure>
@@ -116,7 +116,7 @@
       </div>
       <!-- Pay bill card -->
       <div
-        class="card bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
+        class="card card-btn bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
         id="pay-bill-card-btn"
       >
         <figure>
@@ -130,19 +130,21 @@
       </div>
       <!-- Transaction card -->
       <div
-        class="card bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
+        class="card card-btn bg-base-100 shadow-sm py-3 border-1 border-[#0808081a]"
         id="transactions-card-btn"
       >
         <figure>
           <img src="./images/transaction1.png" alt="Transactions" />
         </figure>
         <div class="card-body">
-          <h2 class="text-center text-[#080808b3]">Transactions</h2>
+          <h2 class="text-center text-[#080808b3]" id="transaction-text-color">
+            Transactions
+          </h2>
         </div>
       </div>
     </div>
     <!-- Add money form -->
-    <div id="form-one" style="display: none">
+    <div id="form-one" class="form" style="display: none">
       <h1 class="font-bold text-[18px] p-3 pt-8 bg-[#f4f5f7] max-w-lg mx-auto">
         Add Money
       </h1>
@@ -207,7 +209,7 @@
       </form>
     </div>
     <!-- Cash out form -->
-    <div id="form-two" style="display: none">
+    <div id="form-two" class="form" style="display: none">
       <h1 class="font-bold text-[18px] p-3 pt-8 bg-[#f4f5f7] max-w-lg mx-auto">
         Cash Out
       </h1>
@@ -251,7 +253,7 @@
       </form>
     </div>
     <!-- Transfer money form -->
-    <div id="form-three" style="display: none">
+    <div id="form-three" class="form" style="display: none">
       <h1 class="font-bold text-[18px] p-3 pt-8 bg-[#f4f5f7] max-w-lg mx-auto">
         Transfer Money
       </h1>
@@ -296,8 +298,9 @@
         </button>
       </form>
     </div>
+
     <!-- Get bonus form -->
-    <div id="form-four" style="display: none">
+    <div id="form-four" class="form" style="display: none">
       <h1 class="font-bold text-[18px] p-3 pt-8 bg-[#f4f5f7] max-w-lg mx-auto">
         Get Bonus
       </h1>
@@ -324,7 +327,7 @@
       </form>
     </div>
     <!-- Pay bill form -->
-    <div id="form-five" style="display: none">
+    <div id="form-five" class="form" style="display: none">
       <h1 class="font-bold text-[18px] p-3 pt-8 bg-[#f4f5f7] max-w-lg mx-auto">
         Pay Bill
       </h1>
@@ -387,6 +390,13 @@
           Pay Now
         </button>
       </form>
+    </div>
+
+    <!-- Transactions form -->
+    <div id="form-six" class="form" style="display: none">
+      <h1 class="font-bold text-[18px] p-3 pt-8 bg-[#f4f5f7] max-w-lg mx-auto">
+        Transactions History
+      </h1>
     </div>
     <script src="./home.js"></script>
   </body>
